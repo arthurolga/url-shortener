@@ -17,6 +17,11 @@ export class UrlController {
 		return this.urlService.findAll();
 	}
 
+	@Get('frequent')
+	findFrequent() {
+		return this.urlService.findFrequent();
+	}
+
 	@Get(':id')
 	findOne(@Param('id') id: string) {
 		return this.urlService.findOne(+id);
@@ -29,6 +34,9 @@ export class UrlController {
 			res.status(302).redirect(accessUrl.original_url)
 		}
 	}
+
+
+
 
 	@Patch(':id')
 	update(@Param('id') id: string, @Body() updateUrlDto: UpdateUrlDto) {

@@ -32,6 +32,7 @@
     "rxjs": "^7.2.0"
   },
   "devDependencies": {
+    "@nestjs/axios": "^3.0.1",
     "@nestjs/cli": "^8.0.0",
     "@nestjs/schematics": "^8.0.0",
     "@nestjs/swagger": "^7.1.17",
@@ -42,6 +43,7 @@
     "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "axios": "^1.6.3",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
